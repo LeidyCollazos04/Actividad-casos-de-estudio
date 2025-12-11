@@ -70,58 +70,111 @@
         
             <div class="card">
                 <div class="titulo">8. Número mayor</div>
-                <div class="palabra">Palabra usada: "Aprendizaje"</div>
-                <p>Devuelve caracteres desde una posición y una cantidad indicada.</p>
-                <div class="codigo">str8.substr(0, 4)</div>
-                <p id="res8"></p>
+                <p>Ingresa tres números para determinar cuál es el mayor</p><br>
+
+                <label for="primerNumero" class="form-label">Primer número</label>
+                <input type="number" class="form-control" id="primerNumero" name="primerNumero"><br>
+
+                <label for="segundoNumero" class="form-label">Segundo número</label>
+                <input type="number" class="form-control" id="segundoNumero" name="segundoNumero"><br>
+
+                <label for="tercerNumero" class="form-label">Tercer número</label>
+                <input type="number" class="form-control" id="tercerNumero" name="tercerNumero"><br>
+
+                <button type="button" class="btn btn-outline-primary" onclick="numeroMayor()">Calcular</button><br>
+
+                <p id="mayor"></p>
             </div>
         
             <div class="card">
                 <div class="titulo">9. Atributos de una llanta</div>
-                <div class="palabra">Palabra usada: "ChatGPT"</div>
-                <p>Convierte toda la cadena en mayúsculas.</p>
-                <div class="codigo">str9.toUpperCase()</div>
-                <p id="res9"></p>
+                <p>Ingrese tipo, grosor, diámetro y marca de la llanta</p><br>
+
+                <label for="tipo" class="form-label">Tipo</label>
+                <input type="text" class="form-control" id="tipo" name="tipo"><br>
+
+                <label for="grosor" class="form-label">Grosor</label>
+                <input type="number" class="form-control" id="grosor" name="grosor"><br>
+
+                <label for="diametro" class="form-label">Diámetro</label>
+                <input type="number" class="form-control" id="diametro" name="diametro"><br>
+
+                <label for="marca" class="form-label">Marca</label>
+                <input type="text" class="form-control" id="marca" name="marca"><br>
+
+                <button type="button" class="btn btn-outline-primary" onclick="llantas()">Calcular</button><br>
+
+                <p id="resultado-llanta"></p>
             </div>
         
             <div class="card">
                 <div class="titulo">10. Número Par o Impar</div>
-                <div class="palabra">Palabra usada: "SENA ADSO"</div>
-                <p>Convierte toda la cadena en minúsculas.</p>
-                <div class="codigo">str10.toLowerCase()</div>
-                <p id="res10"></p>
+                <p>Ingresa un número para determinar si es par o impar</p>
+
+                <label for="numero" class="form-label"></label>
+                <input type="number" class="form-control" id="numero" name="numero"><br>
+
+                <button type="button" class="btn btn-outline-primary" onclick="parImpar()">Calcular</button> <br>
+
+                <p id="par-impar"></p>
             </div>
 
             <div class="card">
                 <div class="titulo">11. Indice de masa corporal</div>
-                <div class="palabra">Palabra usada: "Programación"</div>
-                <p>Devuelve la cantidad de caracteres que tiene una cadena.</p>
-                <div class="codigo">str1.length</div>
-                <p id="res1"></p>
+                <p>Ingresa estos datos para calcular tu índice de masa corporal</p>
+
+                <label for="peso" class="form-label">Peso(kg)</label>
+                <input type="number" class="form-control" id="peso" name="peso"><br>
+
+                <label for="altura" class="form-label">Estatura(mts)</label>
+                <input type="number" class="form-control" id="altura" name="altura"><br>
+                
+                <button type="button" class="btn btn-outline-primary" onclick="masaCorporal()">Calcular</button><br>
+
+                <p id="imc"></p>
+                <p id="diagnostico"></p>
             </div>
             
             <div class="card">
                 <div class="titulo">12. Grados de temperatura</div>
-                <div class="palabra">Palabra usada: "Programación"</div>
-                <p>Devuelve la cantidad de caracteres que tiene una cadena.</p>
-                <div class="codigo">str1.length</div>
-                <p id="res1"></p>
+                <p>Ingrese la temperatura en grados centígrados</p>
+
+                <label for="temperatura" class="form-label"></label>
+                <input type="number" class="form-control" id="temperatura" name="temperatura"><br>
+
+                <button type="button" class="btn btn-outline-primary" onclick="estadoClima()">Calcular</button><br>
+
+                <p id="estado"></p>
             </div>
 
             <div class="card">
                 <div class="titulo">13. Comprobar si un triángulo es equilátero, isósceles o escaleno.</div>
-                <div class="palabra">Palabra usada: "Programación"</div>
-                <p>Devuelve la cantidad de caracteres que tiene una cadena.</p>
-                <div class="codigo">str1.length</div>
-                <p id="res1"></p>
+                <p>Ingrese las medidas de cada lado del triángulo</p>
+                
+                <label for="lado1" class="form-label">Lado 1: </label>
+                <input type="number" class="form-control" id="lado1" name="lado1"><br>
+
+                <label for="lado2" class="form-label">Lado 2: </label>
+                <input type="number" class="form-control" id="lado2" name="lado2"><br>
+
+                <label for="lado3" class="form-label">Lado 3: </label>
+                <input type="number" class="form-control" id="lado3" name="lado3"><br>
+
+                <button type="button" class="btn btn-outline-primary" onclick="tipoTriangulo()">Calcular</button><br>
+
+                <p id="tipo-Triangulo"></p>
             </div>
 
             <div class="card">
                 <div class="titulo">14. Clasificación de niveles de riesgo en un laboratorio</div>
-                <div class="palabra">Palabra usada: "Programación"</div>
-                <p>Devuelve la cantidad de caracteres que tiene una cadena.</p>
-                <div class="codigo">str1.length</div>
-                <p id="res1"></p>
+                <p>Ingresa un número (de 1 a 5) para verificar el tipo de riesgo biológico:</p>
+
+                <label for="nivel" class="form-label">Nivel: </label>
+                <input type="number" class="form-control" id="nivel" name="nivel"><br>
+
+                <button type="button" class="btn btn-outline-primary" onclick="riesgoBiologico()">Calcular</button><br>
+                
+                <p id="tipo-riesgo"></p>
             </div>
         </div>
     </main>
