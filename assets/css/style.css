@@ -1,49 +1,80 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0a0f24, #1d2951);
-  color: #fff;
+  background: #bfe3ff;
+  color: #2c4770;
   margin: 0;
   padding: 20px;
+}
+
+header{
+  background: #bfe3ff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+main{
+  margin-top: 115px;
+  justify-items: center;
+  align-content: center;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 2.3rem;
-  text-shadow: 0 0 10px #00eaff;
+  text-shadow: 0 0 15px #0d8dd2;
 }
 
-.container {
-  max-width: 900px;
+.container1, .container2, .container3, .container4, .container5, .container6, .container7{
+  width: 100%;
   margin: auto;
+  display: flex;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.08);
+  background-color: #a7ddff;
   padding: 18px;
   border-radius: 12px;
   margin-bottom: 18px;
-  border-left: 5px solid #00eaff;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.02);
-  background: rgba(255, 255, 255, 0.15);
+  margin: 18px;
+  border-right: 5px solid #4171b3a0;
+  border-bottom: 5px solid #4171b3a0;
+  width: 50%;
+  justify-content: center;
 }
 
 .titulo {
   font-size: 1.4rem;
   margin-bottom: 8px;
-  color: #00eaff;
+  color: #1952e2;
+  text-align: center;
+  color: #153d7a;
+  text-shadow: 0 0 15px #0d8dd2;
 }
 
-.codigo {
-  background: #000;
-  padding: 12px;
-  border-radius: 8px;
-  margin-top: 8px;
-  overflow-x: auto;
-  font-size: 14px;
-  border: 1px solid #00eaff;
+.parrafo{
+  text-align: center;
+}
+
+label{
+  margin-left: 15px;
+}
+
+.navbar, .collapse, .navbar-nav, .container-fluid{
+  justify-content: center;
+  background-color: #bfe3ff ;
+  padding: 0;
+}
+
+.card1{
+  background-color: #a7ddff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  margin: 18px;
+  border-right: 5px solid #4171b3a0;
+  border-bottom: 5px solid #4171b3a0;
+  width: 80%;
+  justify-content: center;
+
 }
